@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>速習Vue.js</title>
+</head>
+<body>
+
+<div id="app">
+  <p>{{ message }}</p>
+  <p>こちらはエスケープされて</p>
+  <p v-html="message"></p>
+  <p>こちらはエスケープされずにそのまま要素は以下に埋め込まれます</p>
+  <p>{{...}}式やv-textディレクティブが要素オブジェクトのtextContentプロパティを設定するのに対して、v-htmlディレクティブはinnerHtmlプロパティを設定する、と考えると判りやすい</p>
+  <p>なのでv-htmlディレクティブは信頼できることが約束されている(適切なエスケープ処理がなされている)コンテンツにだけ利用しましょう</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="./html.js"></script>
+</body>
+</html>
