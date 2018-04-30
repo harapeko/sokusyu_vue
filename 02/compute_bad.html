@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>速習Vue.js</title>
+</head>
+<body>
+
+<div id="app">
+  <p>{{ email.split('@')[0].toLowerCase() }}</p>
+  <p>emailプロパティの@の前を取り出し小文字にします。</p>
+  <p>でもこれはテンプレート側に複雑な式を書いてしまっていて可読性、汎用性、修正のしやすさがありません。</p>
+  <p>次の例で算出プロパティを使ってみましょう</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="./template.js"></script>
+</body>
+</html>
