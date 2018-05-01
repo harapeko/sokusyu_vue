@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>速習Vue.js</title>
+</head>
+<body>
+
+<div id="app">
+  <form>
+    <input type="button" value="クリック" @click="onclick">
+  </form>
+  <p>算出プロパティ：{{ randomc }}</p>
+  <p>メソッド：{{ randomm() }}</p>
+  <p>現在日時：{{ current }}</p>
+  <p>算出プロパティを基本とし、値を常に更新したいという意図がある場合にだけメソッドを使うのが良い</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="./method.js"></script>
+</body>
+</html>
